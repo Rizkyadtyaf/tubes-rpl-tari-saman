@@ -1,0 +1,14 @@
+ERROR - 2024-07-22 17:16:10 --> Error connecting to the database: Unknown database 'restoran_unikom'
+CRITICAL - 2024-07-22 17:16:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'restoran_unikom'
+#0 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\BaseModel.php(644): CodeIgniter\Model->doFirst()
+#4 C:\xampp3\htdocs\restoran_unikom\app\Models\PegawaiModel.php(18): CodeIgniter\BaseModel->first()
+#5 C:\xampp3\htdocs\restoran_unikom\app\Controllers\Login.php(33): App\Models\PegawaiModel->getPegawai('alvin')
+#6 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\CodeIgniter.php(869): App\Controllers\Login->auth()
+#7 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp3\htdocs\restoran_unikom\vendor\codeigniter4\framework\system\CodeIgniter.php(322): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp3\htdocs\restoran_unikom\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
