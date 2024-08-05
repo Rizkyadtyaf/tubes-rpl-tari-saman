@@ -1,13 +1,13 @@
 Login as Koki
-ID : nina
+ID : koki
 Pass : 123
 
 Login as Pelayan
-ID : noval
+ID : pelayan
 Pass : 123
 
 Login as Kasir
-ID : rizky
+ID : kasir
 Pass : 123
 # CodeIgniter 4 Application Starter
 
